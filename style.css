@@ -1,0 +1,54 @@
+@font-face {
+    font-family: Analog;
+    src: url("./font.ttf");
+}
+
+*{
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+.center{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    color: white;
+    font-family: Analog;
+    font-size: 25px;
+}
+
+#main{
+    width: 100vw;
+    height: 100vh;
+    background-color: black;
+}
+
+.ring{
+    border: 5px white solid;
+    border-radius: 100000px;
+    position: absolute;
+    transition: all 0.1s;
+}
+
+.ringElem{
+    width: 100%;
+    height: fit-content;
+    text-align: right;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%) ;
+}
+
+.centerElement{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 50px;
+}
